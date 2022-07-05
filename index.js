@@ -6,7 +6,9 @@ dotenv.config();
 const app = express();
 
 // init mongoose
-mongoose.connect("mongodb://127.0.0.1:27017/backend_class_mongoose_opsdb");
+mongoose.connect(
+  "mongodb+srv://johnudotor:jboy2000@cluster0.y6ysavr.mongodb.net/?retryWrites=true&w=majority"
+);
 
 const con = mongoose.connection;
 con.on("open", (error) => {
